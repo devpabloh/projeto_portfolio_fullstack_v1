@@ -1,0 +1,49 @@
+.containerSectionInfor {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.containerInformacoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.informacoes {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.containerArt {
+    flex: 1;
+    display: flex; 
+    justify-content: center;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.containerArt img{
+    width: 550px;
+}
+
+.containerButtonsInfor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+@keyframes blinkCursor {
+    from, to { border-right-color: transparent }
+    50% { border-right-color: currentColor }
+}

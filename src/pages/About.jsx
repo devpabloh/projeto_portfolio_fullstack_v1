@@ -1,7 +1,9 @@
+import SectionSobre from "../componentes/SectionSobre";
+
 const About = ()=>{
     return(
         <div>
-            <h1>About</h1>
+            <SectionSobre />
         </div>
     )
 }

@@ -1,30 +1,29 @@
-.techCarousel{
-    position: absolute;
-    buttom: 0;
+.techCarousel {
+    position: fixed; /* Changed from absolute to fixed */
+    bottom: 0; /* Fixed typo from 'buttom' to 'bottom' */
     left: 0;
     width: 100%;
     height: 80px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    background: #D27CDD;
     background: linear-gradient(0deg, rgba(210, 124, 221, 1) 0%, rgba(182, 115, 255, 1) 60%);
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
-.techSlider{
+.techSlider {
     display: flex;
+    align-items: center;
+    height: 100%;
     animation: slide 30s linear infinite;
+    will-change: transform;
+    width: max-content; /* Adicionado para cálculo correto da largura */
 }
 
-.techSlider img{
+.techSlider img {
     height: 50px;
     margin: 0 20px;
     filter: grayscale(100%);
-    transition: filter 0.3s ease; 
-}
-
-.techSlider img:hover {
-    filter: grayscale(0%);
+    transition: filter 0.3s ease;
+    flex-shrink: 0; /* Prevents image squishing */
 }
 
 @keyframes slide {
@@ -32,6 +31,6 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-50%); /* Alterado para mover metade do conteúdo */
     }
 }
