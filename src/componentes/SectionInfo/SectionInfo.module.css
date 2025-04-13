@@ -1,0 +1,61 @@
+.containerSectionInfor{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 1rem;
+    height: calc(90vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textSectionInfor{
+    background: linear-gradient(0deg, rgba(210, 124, 221, 1) 0%, rgba(182, 115, 255, 1) 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.typewriter{
+    font-family: monospace;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blinkCursor 0.7s infinite;
+}
+
+.containerInformacoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.informacoes{
+    width: 40vw;
+}
+
+.containerArt{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40vw;
+
+}
+
+.containerArt img{
+    width: 500px;
+}
+
+.containerButtonsInfor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+@keyframes blinkCursor {
+    from, to { border-right-color: transparent }
+    50% { border-right-color: currentColor }
+}

@@ -1,0 +1,18 @@
+.ButtonTwo{
+    border: 2px solid #D27CDD; /* Solid border with gradient color */
+    background-color: var(--button-text);
+    color: var(--button-background);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    
+}
+
+.ButtonTwo:hover{
+    background: #D27CDD;
+    background: linear-gradient(0deg,rgba(210, 124, 221, 1) 0%, rgba(182, 115, 255, 1) 100%); 
+    color: var(--button-text);
+    box-shadow: 0 20px 15px rgba(29, 28, 30, 0.53);
+    transform: translateY(-1px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}

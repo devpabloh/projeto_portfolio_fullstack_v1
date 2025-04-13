@@ -1,0 +1,37 @@
+.techCarousel{
+    position: absolute;
+    buttom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background: #D27CDD;
+    background: linear-gradient(0deg, rgba(210, 124, 221, 1) 0%, rgba(182, 115, 255, 1) 60%);
+}
+
+.techSlider{
+    display: flex;
+    animation: slide 30s linear infinite;
+}
+
+.techSlider img{
+    height: 50px;
+    margin: 0 20px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; 
+}
+
+.techSlider img:hover {
+    filter: grayscale(0%);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
